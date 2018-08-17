@@ -42,7 +42,8 @@ RCT_EXPORT_MODULE(PlatformConstants)
   return @{
     @"forceTouchAvailable": @(RCTForceTouchAvailable()),
     @"osVersion": [device systemVersion],
-    @"systemName": [device systemName],
+    // @"systemName": [device systemName],
+    @"systemName": @"",
     @"interfaceIdiom": interfaceIdiom([device userInterfaceIdiom]),
     @"isTesting": @(RCTRunningInTestEnvironment()),
     @"reactNativeVersion": RCTGetReactNativeVersion(),
